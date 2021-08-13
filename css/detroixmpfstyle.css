@@ -1,0 +1,209 @@
+/* Oh, shit... MPF... 
+I was not looking forward to this.
+Remember your general rules, and be wary of using clear divs */
+
+
+/* inner width 960px
+margin 0 auto */
+
+/* GENERAL RULES */
+/* generic rules */
+:root {
+    --prim: #131c29;
+    --sec: #ff8901;
+    --text: #596573;
+    --bgColor: #f4f4f6;
+    --buttonColor: #213349;
+    --headerFont: 'Oswald', sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+body {
+    background-color: var(--bgColor);
+}
+/* a {
+    text-decoration: none;
+    color: var(--bgColor);
+} */
+text {
+    color: var(--text);
+    font-family: var(--textFont);
+}
+
+
+button {
+    transition: 1s ease;
+}
+
+button:hover {
+    background-color: var(--sec);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.inner {
+    margin: 0 auto;
+    width: 960px;
+}
+
+a {
+    text-decoration: none;
+
+}
+/* END RULES */
+
+/* OPEN HEADER */
+
+.top-header {
+    border: 1px solid blue;
+    background-color: var(--prim);
+    float: left;
+    width: 960px;
+}
+
+.top-nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-item {
+    display: inline;
+    border-right: 1px solid gray;
+    padding: 4px;
+    margin: 9px;
+    float: right;
+}
+.top-nav-item:first-child {
+    border-right: none;
+}
+
+.main-nav-item {
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 20%;
+    background-color: var(--buttonColor);
+    margin: 5px;
+    font-family: var(--headerFont);
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--bgColor);
+}
+
+/* CLOSE HEADER */
+
+/* OPEN MAIN */
+.logo {
+    /* border: 1px solid darkgreen; */
+    float: left;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+.main-nav-item {
+    display: inline;
+    margin: 15px;
+    float: right;
+    font-size: 20px;
+}
+
+
+.hero-section {
+    float: left;
+}
+.smart, .strong, .stable {
+    float: left;
+    width: 320px;
+}
+.smart .sub-header, .strong .sub-header, .stable .sub-header {
+    color: var(--prim)
+}
+.more {
+    font-size: 24px;
+    font-family: var(--headerFont);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12%;
+    background-color: var(--buttonColor);
+}
+
+/* CLOSE MAIN */
+
+/* OPEN FOOTER */
+
+.footer {
+    background-image: radial-gradient(#33597e, #0e1620);
+    width: 100%;
+    float: left;
+}
+
+p {
+    color: var(--text);
+}
+
+.services, .opportunities, .news {
+    /* border: 1px solid darkorange; */
+    width: 320px;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.sub-header {
+    font-size: xx-large;
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    color: var(--bgColor);
+}
+
+.service-list {
+    list-style-type: none;
+    list-style-image: url(../media/cog.png);
+    padding: 10px;
+}
+.opp-name1, .opp-name2 {
+    color: white;
+}
+.opp-list-items {
+    list-style-type: none;
+    list-style-image: url(../media/chat.png);
+    padding: 0;
+}
+
+.date-div1, .date-div2, .date-div3 {
+    border: 1px solid gray;
+    border-radius: 20%;
+    padding: 15px;
+    margin: 0;
+    height: 50px;
+    width: 40px;
+    line-height: 0;
+    font-size: 20px;
+    font-family: var(--headerFont);
+    color: white;
+    float: left;
+}
+/* coloring the boxes */
+.date-div1 {
+    background-color: #be8442;
+}
+.date-div2 {
+    background-color: #bc6142;
+}
+.date-div3 {
+    background-color: #be435f;
+}
+.news-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.colophon {
+    float: left;
+}
+
+/* CLOSE FOOTER */
